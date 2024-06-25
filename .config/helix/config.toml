@@ -1,0 +1,20 @@
+# https://github-wiki-see.page/m/helix-editor/helix/wiki/Themes
+theme = "rasmus"
+
+[editor]
+true-color = true
+line-number = "relative"
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode","file-absolute-path","workspace-diagnostics","file-modification-indicator"]
+separator = "|"
+
+[editor.file-picker]
+hidden = false
+

@@ -1,0 +1,33 @@
+[[language]]
+name = "vue"
+file-types = ["vue"]
+language-servers = ["typescript-language-server","tailwindcss-ls"]
+scope = "text.html.vue"
+roots = ["package.json"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/home/edgar/.config/npm/lib/node_modules/@vue/language-server/"
+languages = ["vue"]
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
