@@ -53,6 +53,8 @@ require("lazy").setup({
   require('plugins.diffview'),
   require('plugins.nuxt-goto'),
   require('plugins.kiwi'),
+  require('plugins.surround'),
+  require('plugins.nvim-ufo'),
 })
 
 require('core.options')
