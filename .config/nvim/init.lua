@@ -55,6 +55,7 @@ require("lazy").setup({
   require('plugins.kiwi'),
   require('plugins.surround'),
   require('plugins.nvim-ufo'),
+  -- require('plugins.indent-blankline'),
 })
 
 require('core.options')
