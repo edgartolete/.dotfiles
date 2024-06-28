@@ -112,8 +112,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 #ALIASES
 alias ls='ls --color'
 alias c='clear'
+alias dr1='docker run --name pse_analyzer -d -p 80:3000 -v $(pwd):/pse_analyzer --network 32695717995b --env-file ./.env.local pse_analyzer:0.0.0'
 alias drs='docker run --name api-dev -d -p 8080:8080 -e NODE_ENV=development --restart=always -v $(pwd):/api --network e7fcbba7893f edgartolete/5ma4s:0.1.1'
-alias drw='docker run --name web-dev -d -p 80:3000 -v $(pwd):/web --network e7fcbba7893f edgartolete/5ma4w:0.1.0'
+alias drs='docker run --name api-dev -d -p 8080:8080 -e NODE_ENV=development --restart=always -v $(pwd):/api --network e7fcbba7893f edgartolete/5ma4s:0.1.1'
 
 hx(){
   if [[ "$1" == "" ]]; then

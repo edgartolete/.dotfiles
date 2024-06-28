@@ -5,6 +5,8 @@ return {
         "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim",
         "folke/neodev.nvim",
+        "mfussenegger/nvim-dap",
+        "jay-babu/mason-nvim-dap.nvim",
       }
     },
     opts = {
@@ -100,5 +102,18 @@ return {
       lspconfig.jdtls.setup{
         filetypes = {"java"}
       }
+      require("mason-nvim-dap").setup({
+        ensure_installed = {
+          "js",
+          "node2",
+          "chrome",
+          "php",
+          "dart",
+          "cppdg",
+          "python",
+          "elixir",
+        }
+      })
+
     end,
- }
+  }
