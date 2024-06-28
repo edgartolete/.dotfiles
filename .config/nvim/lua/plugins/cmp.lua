@@ -1,6 +1,6 @@
 return {
         "hrsh7th/nvim-cmp",
-        event = "InsertEnter",
+        -- event = "InsertEnter",
         dependencies = {
             'neovim/nvim-lspconfig',
             'hrsh7th/cmp-nvim-lsp',
@@ -10,7 +10,7 @@ return {
             -- 'hrsh7th/cmp-vsnip',
             -- 'hrsh7th/vim-vsnip',
             -- 'L3MON4D3/LuaSnip',
-            "SirVer/ultisnips",
+            -- "SirVer/ultisnips",
             "luckasRanarison/tailwind-tools.nvim",
             "onsails/lspkind-nvim",
         },
@@ -30,11 +30,11 @@ return {
             ['<C-e>'] = cmp.mapping.close(),
             ['<CR>'] = cmp.mapping.confirm({ select = true }),
           },
-          snippet = {
-              expand = function(args)
-                require'luasnip'.lsp_expand(args.body)
-              end
-            },
+          -- snippet = {
+          --     expand = function(args)
+          --       require'luasnip'.lsp_expand(args.body)
+          --     end
+          --   },
           sources = {
             { name = 'nvim_lsp' },
             { name = 'buffer' },
@@ -64,11 +64,11 @@ return {
         })
 
          -- Set up lspconfig.
-        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
         -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-        require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-          capabilities = capabilities
-        }
+        -- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
+        --   capabilities = capabilities
+        -- }
 
       end,
     }

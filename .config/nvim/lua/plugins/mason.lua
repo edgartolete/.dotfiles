@@ -38,20 +38,20 @@ return {
           "tsserver", -- JavaScript/TypeScript
           "volar", -- vue
           "eslint", --ESlint
-          "gopls", --Golang
-          "golangci_lint_ls", --Golang
+          -- "gopls", --Golang
+          -- "golangci_lint_ls", --Golang
           "jdtls", -- Java
           "lua_ls", --Lua
           "dockerls", -- Docker
           "docker_compose_language_service", -- Docker compose file
-          "sqls",
-          "pylsp", -- Python lsp
-          "pyre", -- Python type checker
-          "ruff", -- Python code linter and formatter
-          "clangd", -- C/C++
-          "elixirls", -- Elixir
-          "intelephense", -- PHP
-          "rust_analyzer", -- Rust
+          -- "sqls",
+          -- "pylsp", -- Python lsp
+          -- "pyre", -- Python type checker
+          -- "ruff", -- Python code linter and formatter
+          -- "clangd", -- C/C++
+          -- "elixirls", -- Elixir
+          -- "intelephense", -- PHP
+          -- "rust_analyzer", -- Rust
         },
       })
       require('mason-lspconfig').setup_handlers({
@@ -77,6 +77,7 @@ return {
             tsdk = vim.fn.getcwd() .. "/npm/lib/node_modules/typescript/lib",
           },
         },
+        
       }
       lspconfig.tsserver.setup {
         on_attach = function(client, bufnr)
@@ -90,10 +91,10 @@ return {
         end,
         filetypes = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
       }
-      lspconfig.gopls.setup {
-        filetypes = {"go", "gomod"}
-      }
-      lspconfig.lua_ls.setup {}
+      -- lspconfig.gopls.setup {
+      --   filetypes = {"go", "gomod"}
+      -- }
+      -- lspconfig.lua_ls.setup()
       lspconfig.gopls.setup{
         filetypes = {"go", "gomod"}
       }
@@ -104,16 +105,17 @@ return {
       }
       require("mason-nvim-dap").setup({
         ensure_installed = {
-          "js",
-          "node2",
-          "chrome",
-          "php",
-          "dart",
-          "cppdg",
-          "python",
-          "elixir",
+          -- "js",
+          -- "node2",
+          -- "chrome",
+          -- "php",
+          -- "dart",
+          -- "cppdg",
+          -- "python",
+          -- "elixir",
         }
       })
 
     end,
   }
+

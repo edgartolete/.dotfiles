@@ -48,7 +48,6 @@ require("lazy").setup({
   require('plugins.tailwind-sorter'),
   require('plugins.tailwind-fold'),
   require('plugins.dap'),
-  require('plugins.mason-nvim-dap'),
   require('plugins.lspsaga'),
   require('plugins.diffview'),
   require('plugins.nuxt-goto'),
