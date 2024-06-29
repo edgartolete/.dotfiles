@@ -5,8 +5,6 @@ return {
         "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim",
         "folke/neodev.nvim",
-        "mfussenegger/nvim-dap",
-        "jay-babu/mason-nvim-dap.nvim",
       }
     },
     opts = {
@@ -38,7 +36,7 @@ return {
           "tsserver", -- JavaScript/TypeScript
           "volar", -- vue
           "eslint", --ESlint
-          -- "gopls", --Golang
+          "gopls", --Golang
           -- "golangci_lint_ls", --Golang
           "jdtls", -- Java
           "lua_ls", --Lua
@@ -91,11 +89,7 @@ return {
         end,
         filetypes = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
       }
-      -- lspconfig.gopls.setup {
-      --   filetypes = {"go", "gomod"}
-      -- }
-      -- lspconfig.lua_ls.setup()
-      lspconfig.gopls.setup{
+     lspconfig.gopls.setup{
         filetypes = {"go", "gomod"}
       }
       lspconfig.tailwindcss.setup {}
@@ -103,19 +97,6 @@ return {
       lspconfig.jdtls.setup{
         filetypes = {"java"}
       }
-      require("mason-nvim-dap").setup({
-        ensure_installed = {
-          -- "js",
-          -- "node2",
-          -- "chrome",
-          -- "php",
-          -- "dart",
-          -- "cppdg",
-          -- "python",
-          -- "elixir",
-        }
-      })
-
     end,
   }
 

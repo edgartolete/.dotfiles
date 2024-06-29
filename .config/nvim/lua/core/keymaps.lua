@@ -35,8 +35,12 @@ wk.register({
   d = {
     name = "DAP",
     b = { function() dap.toggle_breakpoint() end, "Toggle Breakpoint"},
-    c = { function() dapui.eval(nil, { enter = true }) end, "Dap UI eval"},
-    q = { function() dap.continue() end, "Continue"},
+    B = { function() dap.set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, "Toggle Breakpoint"},
+    c = { function() dap.continue() end, "Continue"},
+    i = { function() dap.step_into() end, "Continue"},
+    o = { function() dap.step_out() end, "Continue"},
+    s = { function() dap.step_over() end, "Continue"},
+    x = { function() dapui.close() end, "Continue"},
   },
   f = {
     name = "Find using Telescope",
