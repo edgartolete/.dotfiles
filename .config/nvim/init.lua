@@ -21,7 +21,8 @@ require("lazy").setup({
   require('plugins.comment'), -- easily add comment using gcc and visual mode gc binding
   require('plugins.tailwind'), -- tailwind autosuggest
   require('plugins.which-key'), -- helper what key to press next
-  require('plugins.tokyonight'), -- theme, colorscheme
+  -- require('plugins.tokyonight'), -- theme, colorscheme
+  require('plugins.moonfly'),
   require('plugins.telescope'), -- fuzzy finder, search
   require('plugins.neotree'), -- file tree
   require('plugins.cmp'), -- auto completion
