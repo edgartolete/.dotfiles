@@ -16,4 +16,4 @@ vim.g.moonflyVirtualTextColor = true
 vim.cmd('set grepprg=grep\\ -nH\\ --nogroup\\ --color=never')
 vim.cmd('set grepformat=%f:%l:%c:%m')
 
-
+vim.diagnostic.config({ virtual_text = false })
