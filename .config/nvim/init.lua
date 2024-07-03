@@ -56,7 +56,6 @@ require("lazy").setup({
   require('plugins.surround'),
   -- require('plugins.nvim-ufo'),
   -- require('plugins.indent-blankline'),
-  -- require('plugins.tiny-inline-diagnostic'),
 })
 
 require('core.options')
