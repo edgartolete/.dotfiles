@@ -54,9 +54,9 @@ require("lazy").setup({
   require('plugins.nuxt-goto'),
   require('plugins.kiwi'),
   require('plugins.surround'),
-  require('plugins.nvim-ufo'),
+  -- require('plugins.nvim-ufo'),
   -- require('plugins.indent-blankline'),
-  require('plugins.tiny-inline-diagnostic'),
+  -- require('plugins.tiny-inline-diagnostic'),
 })
 
 require('core.options')

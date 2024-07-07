@@ -5,11 +5,11 @@ vim.o.foldcolumn = '1' -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 1
 
-vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
-vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
-vim.keymap.set('n', 'ze', "<cmd>UfoEnableFold<CR>")
-vim.keymap.set('n', 'zd', "<cmd>UfoDisableFold<CR>")
-
+-- vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
+-- vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+-- vim.keymap.set('n', 'ze', "<cmd>UfoEnableFold<CR>")
+-- vim.keymap.set('n', 'zd', "<cmd>UfoDisableFold<CR>")
+--
 --HARPOON KEYMAPS
 local harpoon = require("harpoon")
 harpoon:setup() -- REQUIRED
