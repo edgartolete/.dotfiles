@@ -42,7 +42,7 @@ require("lazy").setup({
   require('plugins.trouble'),
   require('plugins.todo-comments'), -- Allow to add comments like TODO/NOTE/FIX/WARNING/HACK/PERF/ 
   require('plugins.ts-comments'), -- Adds proper comments for ts, jsx
-  require('plugins.persistence'), -- automatically saves the active session under ~/.local/state/nvim/sessions on exit
+  -- require('plugins.persistence'), -- automatically saves the active session under ~/.local/state/nvim/sessions on exit
   require('plugins.undo-tree'),
   require('plugins.jdtls'),
   require('plugins.lazydocker'),
@@ -55,7 +55,7 @@ require("lazy").setup({
   require('plugins.kiwi'),
   require('plugins.surround'),
   -- require('plugins.nvim-ufo'),
-  -- require('plugins.indent-blankline'),
+  require('plugins.indent-blankline'),
 })
 
 require('core.options')
