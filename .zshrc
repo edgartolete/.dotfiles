@@ -124,6 +124,11 @@ hx(){
   fi
 }
 
+# required for pipx auto load
+autoload -U bashcompinit
+    bashcompinit
+eval "$(register-python-argcomplete pipx)"
+
 # . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
 
 # collection of useful shortcuts for work

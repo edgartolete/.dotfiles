@@ -151,3 +151,6 @@ lzn()
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 . "$HOME/.cargo/env"
+
+# Created by `pipx` on 2024-10-11 15:12:47
+export PATH="$PATH:/home/edgar/.local/bin"
