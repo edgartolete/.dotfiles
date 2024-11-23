@@ -81,10 +81,10 @@ map <leader>fo :History<CR>
 map <leader>fj :Jumps<CR>
 
 " Configure key bindings for LSP features
-nnoremap <silent>gd :LspDefinition<CR>
-nnoremap <silent>gr :LspReferences<CR>
-nnoremap <silent>gi :LspImplementation<CR>
-nnoremap <silent>gt :LspTypeDefinition<CR>
+nnoremap <silent>fd :LspDefinition<CR>
+nnoremap <silent>fr :LspReferences<CR>
+nnoremap <silent>fi :LspImplementation<CR>
+nnoremap <silent>ft :LspTypeDefinition<CR>
 " nnoremap <silent>K :LspHover<CR>
 
 nmap <silent>mm <Plug>BookmarkToggle
@@ -97,3 +97,4 @@ nmap <silent>mx <Plug>BookmarkClearAll
 
 nnoremap <silent> K :call ShowDocumentation()<CR>
 nmap <silent> <buffer> gk <Plug>(tailwind-lookup)
+nnoremap <silent>gf :Git<CR>
