@@ -57,6 +57,7 @@ require("lazy").setup({
   -- require('plugins.nvim-ufo'),
   require('plugins.indent-blankline'),
   require('plugins.debugprint'),
+  require('plugins.markdown-preview')
 })
 
 require('core.options')
