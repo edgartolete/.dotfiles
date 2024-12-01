@@ -2,7 +2,7 @@ return {
   'stevearc/aerial.nvim',
   tag = "stable",
   opts = {},
-  ft = { "vue", "java", "dart" },
+  ft = { "typescript, vue", "java", "dart" },
   -- Optional dependencies
   dependencies = {
      "nvim-treesitter/nvim-treesitter",

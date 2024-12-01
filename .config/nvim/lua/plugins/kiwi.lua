@@ -6,13 +6,8 @@ return {
     opts = {
         {
             name = "work",
-            path = "/home/kiwi/work"
+            path = "/Users/edgartolete/Documents/"
         },
-        {
-            name = "personal",
-            path = "/home/kiwi/personal"
-        },
-
     },
     lazy = true
 }
