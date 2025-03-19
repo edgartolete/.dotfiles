@@ -112,5 +112,9 @@ wk.register({
     w = { '<cmd>lua require("kiwi").open_wiki_index("work")<CR>', "Open Wiki Work"},
     t = { '<cmd>lua require("kiwi").todo.toggle()<CR>', "Toggle Kiwi"},
   },
+  c = {
+    name = "Copilot", -- additional keybindings in the plugin itself
+    p = { '<cmd> lua require("copilot.panel").open()<CR>', "Open Panel"},
+  },
   S = { name = ""},
 }, { prefix = "<leader>"})
