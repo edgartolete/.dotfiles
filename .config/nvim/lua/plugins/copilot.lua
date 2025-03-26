@@ -8,8 +8,8 @@ return {
         enabled = true,
         auto_refresh = true,
         keymap = {
-          jump_prev = "[[",
-          jump_next = "]]",
+          jump_prev = "<C-p>",
+          jump_next = "<C-n>",
           accept = "<CR>",
           refresh = "gr",
           open = "<M-CR>"
@@ -25,12 +25,12 @@ return {
         hide_during_completion = true,
         debounce = 75,
         keymap = {
-          accept = "<M-l>",
+          accept = "<Space>",
           accept_word = false,
           accept_line = false,
-          next = "<M-]>",
-          prev = "<M-[>",
-          dismiss = "<C-]>",
+          next = "<M-n>",
+          prev = "<M-p>",
+          dismiss = "<M-e>",
         },
       },
       filetypes = {
