@@ -16,7 +16,7 @@ return {
         },
         layout = {
           position = "right", -- | top | left | right | horizontal | vertical
-          ratio = 0.4
+          ratio = 0.3
         },
       },
       suggestion = {
