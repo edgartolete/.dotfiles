@@ -4,13 +4,13 @@ return {
         "nvim-lua/plenary.nvim"
     },
     opts = {
-        {
-            name = "work",
-            path = "/home/kiwi/work"
-        },
+        -- {
+        --     name = "work",
+        --     path = "/home/kiwi/work"
+        -- },
         {
             name = "personal",
-            path = "/home/kiwi/personal"
+            path = "/home/edgar/personal"
         },
 
     },
