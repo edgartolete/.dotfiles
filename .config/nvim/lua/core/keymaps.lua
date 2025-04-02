@@ -27,7 +27,9 @@ wk.register({
     C = { function () bm.bookmark_clear_all()  end, "Clear All Bookmark"},
   },
   t = {
-    name = "Tree Views",
+    name = "Tree Views/Tabs",
+    n = {"<cmd>tabnew<CR>", "Tab New"},
+    x = {"<cmd>tabclose<CR>", "Tab Close"},
     e = {"<cmd>Neotree toggle<CR>", "Neotree (Explorer)"},
     s = { "<cmd>AerialToggle!<cr>", "Code Structure outline"},
     u = { "<cmd>lua require('undotree').toggle()<cr>", "Undo tree" },
