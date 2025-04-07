@@ -12,7 +12,7 @@ return {
           jump_next = "<C-n>",
           accept = "<CR>",
           refresh = "gr",
-          open = "<M-CR>"
+          open = "<C-CR>"
         },
         layout = {
           position = "right", -- | top | left | right | horizontal | vertical
