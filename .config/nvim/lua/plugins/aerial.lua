@@ -8,4 +8,7 @@ return {
      "nvim-treesitter/nvim-treesitter",
      "nvim-tree/nvim-web-devicons"
   },
+  keys = {
+    { "<leader>ts", "<cmd>AerialToggle!<CR>", desc = "Aerial" },
+  },
 }

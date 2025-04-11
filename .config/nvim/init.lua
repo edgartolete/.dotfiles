@@ -13,8 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   require('plugins.neoconf'),
-  require('plugins.bookmarks'), -- WARNING: Buggy on Debian 12 + Nvim 0.10.0 
-  require('plugins.fugitive'), -- another tool to do git
+  -- require('plugins.bookmarks'), -- WARNING: Buggy on Debian 12 + Nvim 0.10.0 
+  -- require('plugins.fugitive'), -- another tool to do git
   require('plugins.treesitter'),
   require('plugins.numbertoggle'), -- add number every line for jump
   require('plugins.mason'), -- lsp, management
