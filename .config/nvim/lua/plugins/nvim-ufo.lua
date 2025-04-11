@@ -40,4 +40,21 @@ return {
       end
     })
   end,
+  cmd = {
+    "UfoEnable",
+    "UfoEnableFold",
+    "UfoDisableFold",
+    "UfoDisable",
+    "UfoAttach",
+    "UfoDetach",
+    "UfoInspect",
+    "UfoDetachAll",
+  },
+  keys = {
+    { "<leader>ze", "<cmd>UfoEnableFold<cr>", desc = "Enable Auto Fold" },
+    { "<leader>zd", "<cmd>UfoDisableFold<cr>", desc = "Disable Auto Fold" },
+    { "<leader>zi", "<cmd>UfoInspect<cr>", desc = "Enable Fold" },
+    { "<leader>zE", "<cmd>UfoEnable<cr>", desc = "Disable Fold" },
+    { "<leader>zD", "<cmd>UfoDisable<cr>", desc = "Inspect Fold" },
+  }
 }

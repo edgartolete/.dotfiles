@@ -48,4 +48,15 @@ return {
   end
 })
   end,
+  cmd = { "Gitsigns" },
+  keys = {
+    { "<leader>gb", function() require('gitsigns').blame_line{full=true} end, desc = "Stage hunk" },
+    { "<leader>hs", "<cmd>Gitsigns stage_hunk<cr>", desc = "Stage hunk" },
+    { "<leader>hr", "<cmd>Gitsigns reset_hunk<cr>", desc = "Reset hunk" },
+    { "<leader>hS", "<cmd>Gitsigns stage_buffer<cr>", desc = "Stage buffer" },
+    { "<leader>hu", "<cmd>Gitsigns undo_stage_hunk<cr>", desc = "Undo stage hunk" },
+    { "<leader>hR", "<cmd>Gitsigns reset_buffer<cr>", desc = "Reset buffer" },
+    { "<leader>hp", "<cmd>Gitsigns preview_hunk<cr>", desc = "Preview hunk" },
+    { "<leader>hD", "<cmd>Gitsigns diffthis<cr>", desc = "Diff this" },
+  }
 }

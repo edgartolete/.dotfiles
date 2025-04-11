@@ -12,6 +12,12 @@ return {
     dependencies = {'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim'},
     build = 'cd formatter && npm ci && npm run build',
     config = true,
-    ft = { "typescriptreact"}
+    ft = { "typescriptreact", "javascriptreact", "html", "vue", "svelte", "php", "blade" },
+    cmd = {
+      "TailwindSort",
+    },
+    keys = {
+      { "<leader>Ft", "<cmd>TailwindSort<cr>", desc = "tailwind classes [s]ort"},
+    }
   },
 }

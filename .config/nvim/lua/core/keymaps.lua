@@ -14,23 +14,16 @@ vim.o.foldlevelstart = 1
 local harpoon = require("harpoon")
 harpoon:setup() -- REQUIRED
 local wk = require("which-key")
-local bm = require('bookmarks') -- WARNING: Buggy on Debian 12 + Nvim 0.10.0 
+-- local bm = require('bookmarks') -- WARNING: Buggy on Debian 12 + Nvim 0.10.0 
 local dap = require("dap")
 local dapui = require("dapui")
+
 wk.register({
-  b = {
-    name = "Bookmarks",
-    b = { function () bm.bookmark_toggle() end, "Add Bookmark"},
-    f = { "<cmd>Telescope bookmarks list<CR>", "Find Bookmarks"},
-    l = { function () bm.bookmark_list() end, "Bookmarks List"},
-    c = { function () bm.bookmark_clean() end, "Clear Buffer Bookmark"},
-    C = { function () bm.bookmark_clear_all()  end, "Clear All Bookmark"},
-  },
-  t = {
+ t = {
     name = "Tree Views/Tabs",
     n = {"<cmd>tabnew<CR>", "Tab New"},
     x = {"<cmd>tabclose<CR>", "Tab Close"},
-    e = {"<cmd>Neotree toggle<CR>", "Neotree (Explorer)"},
+    e = {"<cmd>Neotree toggle float<CR>", "Neotree (Explorer)"},
     s = { "<cmd>AerialToggle!<cr>", "Code Structure outline"},
     u = { "<cmd>lua require('undotree').toggle()<cr>", "Undo tree" },
   },
@@ -75,11 +68,14 @@ wk.register({
     s = {"<cmd>TSJSplit<cr>", "code block [s]plit" },
     t = {"<cmd>TailwindSort<cr>", "tailwind classes [s]ort"},
     f = {"<cmd>TailwindFoldToggle<cr>", "tailwind classes [f]old"},
-    e = { "<cmd>UfoEnableFold<CR>", "Enable Auto Fold"},
-    d = { "<cmd>UfoDisableFold<CR>", "Disable Auto Fold"},
-    E = { "<cmd>UfoEnable<CR>", "Enable Folding"},
-    D = { "<cmd>UfoDisable<CR>", "Disable Folding"},
+  h = {
+    name = "Harpoon (Jumplist)",
+    a = { function() harpoon:list():add() end, "Add to Jumplist"},
+    l = { function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, "View list"},
+    n = { function() harpoon:list():next() end, "Jump to next"},
+    p = { function() harpoon:list():prev() end, "Jump to previous"},
   },
+ },
   h = {
     name = "Harpoon (Jumplist)",
     a = { function() harpoon:list():add() end, "Add to Jumplist"},
@@ -109,7 +105,8 @@ wk.register({
   p = {
     name = "Peek",
     d = {"<cmd>Lspsaga peek_definition<CR>", "Peek Definition"},
-    t = {"<cmd>Lspsaga peek_type_definition<CR>", "Peek Type Definition"}
+    t = {"<cmd>Lspsaga peek_type_definition<CR>", "Peek Type Definition"},
+    h = {"<cmd>Lspsaga hover_doc<CR>", "Peek Hover Doc"},
   },
   k = {
     name = "Kiwi (Note)",
@@ -123,4 +120,16 @@ wk.register({
     p = { '<cmd> lua require("copilot.panel").open()<CR>', "Open Panel"},
   },
   S = { name = ""},
+  o = {
+    name = "Others",
+    d = { "<cmd>Lazydocker<CR>", "LazyDocker"},
+  },
+  z = {
+    name = "Fold",
+    e = { "<cmd>UfoEnableFold<CR>", "Enable Auto Fold"},
+    d = { "<cmd>UfoDisableFold<CR>", "Disable Auto Fold"},
+    E = { "<cmd>UfoEnable<CR>", "Enable Folding"},
+    D = { "<cmd>UfoDisable<CR>", "Disable Folding"},
+    i = { "<cmd>UfoInspect<CR>", "Inspect Folding"},
+  }
 }, { prefix = "<leader>"})
