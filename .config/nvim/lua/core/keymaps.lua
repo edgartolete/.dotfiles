@@ -119,4 +119,10 @@ wk.register({
     p = { '<cmd> lua require("copilot.panel").open()<CR>', "Open Panel"},
   },
   S = { name = ""},
+  u = { name = "UFO code view folding",
+    e = { "<cmd>UfoEnableFold<CR>", "Enable Auto Fold"},
+    d = { "<cmd>UfoDisableFold<CR>", "Disable Auto Fold"},
+    E = { "<cmd>UfoEnable<CR>", "Enable Folding"},
+    D = { "<cmd>UfoDisable<CR>", "Disable Folding"},
+  },
 }, { prefix = "<leader>"})

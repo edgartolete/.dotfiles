@@ -1,3 +1,5 @@
+-- to disable , type: :UfoDisable
+
 return {
   "kevinhwang91/nvim-ufo",
   dependencies = { "kevinhwang91/promise-async" },
@@ -36,7 +38,5 @@ return {
         return {'treesitter'}
       end
     })
-
-
   end,
 }
