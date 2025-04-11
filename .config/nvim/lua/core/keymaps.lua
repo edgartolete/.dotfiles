@@ -123,5 +123,4 @@ wk.register({
     p = { '<cmd> lua require("copilot.panel").open()<CR>', "Open Panel"},
   },
   S = { name = ""},
-  },
 }, { prefix = "<leader>"})
