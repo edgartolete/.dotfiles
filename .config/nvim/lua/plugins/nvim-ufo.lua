@@ -1,4 +1,5 @@
 -- to disable , type: :UfoDisable
+-- to change the level of folder, type: :set foldlevel=n where n is the number of level
 
 return {
   "kevinhwang91/nvim-ufo",
