@@ -21,7 +21,8 @@ require("lazy").setup({
   require('plugins.comment'), -- easily add comment using gcc and visual mode gc binding
   require('plugins.tailwind'), -- tailwind autosuggest
   require('plugins.which-key'), -- helper what key to press next
-  -- require('plugins.tokyonight'), -- theme, colorscheme
+  --require('plugins.tokyonight'), -- theme, colorscheme
+  --require('plugins.cyberdream'), -- theme, colorscheme
   require('plugins.moonfly'),
   require('plugins.telescope'), -- fuzzy finder, search
   require('plugins.neotree'), -- file tree
@@ -53,7 +54,7 @@ require("lazy").setup({
   require('plugins.nuxt-goto'),
   require('plugins.kiwi'),
   require('plugins.surround'),
-  -- require('plugins.nvim-ufo'),
+  require('plugins.nvim-ufo'),
   require('plugins.indent-blankline'),
   require('plugins.debugprint'),
   require('plugins.markdown-preview'),
