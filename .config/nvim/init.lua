@@ -59,6 +59,7 @@ require("lazy").setup({
   require('plugins.debugprint'),
   require('plugins.markdown-preview'),
   require('plugins.copilot'),
+  require('plugins.venn'),
 })
 
 require('core.options')
